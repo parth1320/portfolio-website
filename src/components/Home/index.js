@@ -1,6 +1,6 @@
 import "./index.scss";
 import { Link } from "react-router-dom";
-import LogoTitle from "../../assets/images/logo-s.png";
+import LogoTitle from "../../assets/images/logo_par.png";
 import { useEffect, useState } from "react";
 import AnimatedLetters from "../AnimatedLetters";
 

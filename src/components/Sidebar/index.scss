@@ -1,6 +1,6 @@
 .nav-bar {
   background: #181818;
-  width: 80px;
+  width: 60px;
   height: 100%;
   position: absolute;
   top: 0;
@@ -10,16 +10,16 @@
   .logo {
     display: block;
     padding: 8px 0;
-  }
 
-  img {
-    display: block;
-    margin: 8px auto;
-    width: 24px;
-    height: auto;
+    img {
+      display: block;
+      margin: 8px auto;
+      width: 30px;
+      height: auto;
 
-    &.sub-logo {
-      width: 50px;
+      &.sub-logo {
+        width: 60px;
+      }
     }
   }
 
@@ -59,7 +59,7 @@
 
       &:after {
         content: "";
-        font: size 9px;
+        font-size: 9px;
         letter-spacing: 2px;
         position: absolute;
         bottom: 0;
@@ -67,11 +67,12 @@
         width: 100%;
         text-align: center;
         opacity: 0;
+        -webkit-transition: all 0.3s ease-out;
         transition: all 0.3s ease-out;
       }
 
       &:first-child {
-        &::after {
+        &:after {
           content: "HOME";
         }
       }
@@ -82,9 +83,16 @@
         content: "ABOUT";
       }
     }
+
     a.contact-link {
       &:after {
         content: "CONTACT";
+      }
+    }
+
+    a.portfolio-link {
+      &:after {
+        content: "PORTFOLIO";
       }
     }
 
@@ -111,8 +119,11 @@
         display: block;
         font-size: 15px;
         line-height: 16px;
+        color: #4d4d4e;
+      }
 
-        &:hover svg {
+      &:hover {
+        .anchor-icon {
           color: #ffd700;
         }
       }
