@@ -24,6 +24,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
+<<<<<<< HEAD
+=======
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+>>>>>>> parent of a84cdc9 (Updating deploy script tag)
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
